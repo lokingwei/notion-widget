@@ -4,6 +4,10 @@ specifiers:
   '@nuxt/devtools': latest
   '@types/node': ^18
   nuxt: ^3.5.2
+  vue3-carousel: ^0.3.1
+
+dependencies:
+  vue3-carousel: 0.3.1
 
 devDependencies:
   '@nuxt/devtools': 0.5.5_nuxt@3.5.3
@@ -6163,6 +6167,12 @@ packages:
       '@vue/server-renderer': 3.3.4_vue@3.3.4
       '@vue/shared': 3.3.4
     dev: true
+
+  /vue3-carousel/0.3.1:
+    resolution: {integrity: sha512-86vUkNPBzL2PVuR9w6hUsI90ccFjLp+K8cSFpRTISf+SjUQY3fMHc5CFF5MUL62v1xYYm27zEBmQupO9VQx9Kw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dev: false
 
   /wait-on/7.0.1:
     resolution: {integrity: sha512-9AnJE9qTjRQOlTZIldAaf/da2eW0eSRSgcqq85mXQja/DW3MriHxkpODDSUEg+Gri/rKEcXUZHe+cevvYItaog==}
