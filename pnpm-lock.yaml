@@ -2,12 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxt/devtools': latest
+  '@splidejs/vue-splide': ^0.6.12
   '@types/node': ^18
   nuxt: ^3.5.2
-  vue3-carousel: ^0.3.1
 
 dependencies:
-  vue3-carousel: 0.3.1
+  '@splidejs/vue-splide': 0.6.12
 
 devDependencies:
   '@nuxt/devtools': 0.5.5_nuxt@3.5.3
@@ -1187,6 +1187,16 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@splidejs/splide/4.1.4:
+    resolution: {integrity: sha512-5I30evTJcAJQXt6vJ26g2xEkG+l1nXcpEw4xpKh0/FWQ8ozmAeTbtniVtVmz2sH1Es3vgfC4SS8B2X4o5JMptA==}
+    dev: false
+
+  /@splidejs/vue-splide/0.6.12:
+    resolution: {integrity: sha512-eQb8pnGMN8Tr0FVaQo1PUMZlMHl8fSqHNXPTx79eeE2dkZqbsvq6jRzXoT9ZF7hFkxdOEmB6qYNp93SUwV684g==}
+    dependencies:
+      '@splidejs/splide': 4.1.4
+    dev: false
 
   /@tootallnate/once/2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -6167,12 +6177,6 @@ packages:
       '@vue/server-renderer': 3.3.4_vue@3.3.4
       '@vue/shared': 3.3.4
     dev: true
-
-  /vue3-carousel/0.3.1:
-    resolution: {integrity: sha512-86vUkNPBzL2PVuR9w6hUsI90ccFjLp+K8cSFpRTISf+SjUQY3fMHc5CFF5MUL62v1xYYm27zEBmQupO9VQx9Kw==}
-    peerDependencies:
-      vue: ^3.2.0
-    dev: false
 
   /wait-on/7.0.1:
     resolution: {integrity: sha512-9AnJE9qTjRQOlTZIldAaf/da2eW0eSRSgcqq85mXQja/DW3MriHxkpODDSUEg+Gri/rKEcXUZHe+cevvYItaog==}

@@ -1,6 +1,6 @@
 <script setup>
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import '@splidejs/vue-splide/css';
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
 const route = useRoute()
 const id = route.query.id;
 const domain = route.query.domain;
@@ -14,6 +14,7 @@ if(id != null && domain != null) {
 
 <style>
 .responsive {
+  object-fit: cover;
   width: 100%;
   max-height: 400px;
   height: auto;
@@ -21,13 +22,9 @@ if(id != null && domain != null) {
 </style>
 
 <template>
-  <carousel :items-to-show="1.5">
-    <slide v-for="img in images" :key="img">
+  <Splide :options="{ rewind: true }">
+    <SplideSlide v-for="img in images" :key="img">
       <img :src="img" class="responsive"/>
-    </slide>
-    <template #addons>
-      <navigation />
-      <pagination />
-    </template>
-  </carousel>
+    </SplideSlide>
+  </Splide>
 </template>
